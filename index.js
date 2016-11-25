@@ -36,6 +36,9 @@ var quotes = [
   ['If you speak the truth, have a foot in the stirrup.', 'Turkish proverb'],
   ['For all who draw the sword will die by the sword.', 'Matthew 26:52'],
   ['To achieve great things, two things are needed; a plan, and not quite enough time.', 'Lenard Bernstein'],
+  ['Man is essentially ignorant, and becomes learned through acquiring knowledge.', 'Ibn Khaldun'],
+  ['Art for art\'s sake is an empty phrase. Art for the sake of truth, art for the sake of the good and the beautiful, that is the faith I am searching for.', 'George Sand'],
+  ['To administer is to govern: to govern is to reign. That is the essence of the problem.', 'Honore Gabriel Riqueti, comte de Mirabeau']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
