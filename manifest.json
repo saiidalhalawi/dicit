@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "dicit",
+  "description": "put a random quote into every new tab",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "/icons/icon32.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "quote.html"
+  }
+}
