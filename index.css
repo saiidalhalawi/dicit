@@ -16,8 +16,9 @@ html, body {
 #quote-line {
   animation-name: animating-quote;
   animation-duration: 1.25s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
   font-size: 4.5rem;
+  margin: 0;
   text-align: left;
   transition-delay: .7s;
 }
@@ -25,8 +26,9 @@ html, body {
 #quote-author {
   animation-name: animating-author;
   animation-duration: 2.25s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
   font-size: 2.85rem;
+  margin: 0;
   text-align: right;
   padding-top: 20px;
   transition-delay: 1.5s;
