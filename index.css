@@ -14,15 +14,37 @@ html, body {
 }
 
 #quote-line {
+  animation-name: animating-quote;
+  animation-duration: 1.25s;
+  animation-timing-function: ease-in;
   font-size: 4.5rem;
   text-align: left;
+  transition-delay: .7s;
 }
 
 #quote-author {
+  animation-name: animating-author;
+  animation-duration: 2.25s;
+  animation-timing-function: ease-in;
   font-size: 2.85rem;
   text-align: right;
   padding-top: 20px;
+  transition-delay: 1.5s;
 }
 #quote-author:before {
   content: '- '
+}
+
+@keyframes animating-quote {
+  0%     { opacity: 0; }
+  50%    { opacity: 0; }
+  75%    { opacity: .25; }
+  100%   { opacity: 1; }
+}
+
+@keyframes animating-author {
+  0%     { opacity: 0; }
+  50%    { opacity: 0; }
+  75%    { opacity: .25; }
+  100%   { opacity: 1; }
 }
