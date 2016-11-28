@@ -1,7 +1,8 @@
 html, body {
-  width: 100%;
-  height: 100%;
   font-size: 14px;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 #quote-content {
@@ -15,7 +16,7 @@ html, body {
 
 #quote-line {
   animation-name: animating-quote;
-  animation-duration: 1.25s;
+  animation-duration: .75s;
   animation-timing-function: ease-out;
   font-size: 4.5rem;
   margin: 0;
@@ -25,7 +26,7 @@ html, body {
 
 #quote-author {
   animation-name: animating-author;
-  animation-duration: 2.25s;
+  animation-duration: 1.25s;
   animation-timing-function: ease-out;
   font-size: 2.85rem;
   margin: 0;
