@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "dicit",
-  "description": "put a random quote into every new tab",
+  "description": "A Chrome extension display a historical quote in everytime when new tab opened.",
   "version": "1.0",
   "icons": {
     "16": "icons/icon16.png",
