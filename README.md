@@ -6,7 +6,7 @@
 
 ## Installation
 
-Install from [Chrome Web Store](), or download this repository manually.
+Install from [Chrome Web Store](https://chrome.google.com/webstore/detail/dicit/ccbcfjfimkpjeacionkhijglhijdbiba?hl=ja&gl=JP), or download this repository manually.
 
 ## Notes
 
