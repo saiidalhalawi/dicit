@@ -1,6 +1,6 @@
 # dicit
 
-**A Chrome extension display a random quote when new tab opened.**
+**A Chrome extension that displays a historical quote every time a new tab is opened.**
 
 <img src="https://github.com/saiidalhalawi/dicit/blob/caption-placement/images/main_cap.png" alt="Caption" style="width: 70%; border: 1px solid #c5c5c5;"/>
 
