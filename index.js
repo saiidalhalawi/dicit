@@ -6,7 +6,7 @@ Copyright (c) 2016 Saiid Al-Halawi
 
 
 var quotes = [
-  ['War is delightful to those who have had no experience of it.', 'Erasmus'],
+  ['War is delightful to those who have had no experience of it.', 'Desiderius Erasmus'],
   ['The sinews of war are not gold, but good soldiers.', 'Niccoló Machiavelli'],
   ['He who wishes to be obeyed must know how to command.', 'Niccoló Machiavelli'],
   ['Strike up the drum and march courageously.', 'Christopher Marlowe'],
@@ -114,7 +114,6 @@ var quotes = [
   ['I do not belong to any faction, I will fight them all.', 'Louis Antoine de Saint-just'],
   ['Soldiers, when I give the command to fire, fire straight at my heart. Wait for the order. It will be my last to you. I protest against my condemnation. I have fought a hundred battles for France, and not one against her ... Soldiers, fire!', 'Michel Ney'],
   ['Science never solves a problem without creating ten more.', 'George Bernard Shaw'],
-  ['George Bernard Shaw', 'Oscar Wilde'],
   ['Work is the curse of the drinking classes.', 'Oscar Wilde'],
   ['There is only one thing in life worse than being talked about, and that is not being talked about.', 'Oscar Wilde'],
   ['The old believe everything, the middle-aged suspect everything, the young know everything.', 'Oscar Wilde'],
@@ -208,7 +207,35 @@ var quotes = [
   ['The single biggest problem in communication is the illusion that it has taken place.', 'George Bernard Shaw'],
   ['Woe to me, my mother, that you have borne me As a man of strife and a man of contention to all the land! I have not lent, nor have men lent money to me, Yet everyone curses me.', 'Jeremiah 15:10'],
   ['War does not determine who is right - only who is left.', 'Bertrand Russell'],
-  ['People never lie so much as after a hunt, during a war or before an election.', 'Otto von Bismarck']
+  ['People never lie so much as after a hunt, during a war or before an election.', 'Otto von Bismarck'],
+  ['Woe to the defeated!', 'Brennus'],
+  ['Oh, Durendal, how beautiful you are, how clear, how bright! How you shine and flash against the sun!', 'from "the Song of Roland"'],
+  ['I will not wear a crown of gold where my Savior wore one of thorns', 'Godfrey of Bouillon'],
+  ['Death twitches my ear. Live, he says, I am coming.', 'Virgil'],
+  ['Fortune sides with him who dares.', 'Virgil'],
+  ['Any old woman can love God better than a doctor of theology can.', 'Bonaventure'],
+  ['The three most important virtues are humility, humility, and humility.', 'Bernard of Clairvaux'],
+  ['Give light, and the darkness will disappear of itself.', 'Desiderius Erasmus'],
+  ['The main hope of a nation lies in the proper education of its youth', 'Desiderius Erasmus'],
+  ['Your library is your paradise.', 'Desiderius Erasmus'],
+  ['The cat would eat fish but would not get her feet wet.', 'Geoffrey Chaucer'],
+  ['Antichrist is Mammon\'s son.', 'John Milton'],
+  ['Biochemically, love is just like eating large amounts of chocolate.', 'John Milton'],
+  ['Falsehood flies, and the truth comes limping after it.', 'Jonathan Swift'],
+  ['Every man desires to live long, but no man wishes to be old.','Jonathan Swift'],
+  ['Promises and pie-crust are made to be broken.', 'Jonathan Swift'],
+  ['It is the talent of human nature to run from one extreme to another.', 'Jonathan Swift'],
+  ['If you want good laws, burn those you have and make new ones.', 'Voltaire'],
+  ['Governments need to have both shepherds and butchers.', 'Voltaire'],
+  ['It is dangerous to be right when the government is wrong.', 'Voltaire'],
+  ['Originality is nothing but judicious plagiarism.', 'Voltaire'],
+  ['There are no sects in geometry.', 'Voltaire'],
+  ['What is history? The lie that everyone agrees on...', 'Voltaire'],
+  ['Democracy is just a filler for textbooks! Do you actually believe that public opinion influences the government?', 'Voltaire'],
+  ['Language is a very difficult thing to put into words.', 'Voltaire'],
+  ['There is another world, but it is in this one.', 'William Butler Yeats'],
+  ['Twelve highlanders and a bagpipe make a rebellion.', 'Scotish Proverb'],
+  ['Fools look to tomorrow; wise men use tonight.', 'Scotish Proverb']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
