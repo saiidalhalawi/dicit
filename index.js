@@ -235,13 +235,32 @@ var quotes = [
   ['Language is a very difficult thing to put into words.', 'Voltaire'],
   ['There is another world, but it is in this one.', 'William Butler Yeats'],
   ['Twelve highlanders and a bagpipe make a rebellion.', 'Scotish Proverb'],
-  ['Fools look to tomorrow; wise men use tonight.', 'Scotish Proverb']
+  ['Fools look to tomorrow; wise men use tonight.', 'Scotish Proverb'],
+  ['Never marry for money. You can borrow it cheaper.', 'Scotish Proverb'],
+  ['Width of life is more important than length of life.', 'Ibn Sina'],
+  ['The person who predicts the future is lying, even when he is right.', 'Arabic Proverb'],
+  ['Keep away from trouble and sing to it.', 'Syrian Proverb'],
+  ['Curiosity is the first step to hell.', 'Polish Proverb'],
+  ['Where devil cannot go, he will send a woman.', 'Polish Proverb'],
+  ['It is easiest to learn from another man\'s damage.', 'Venetian Proverb'],
+  ['Crooked logs make straight fires.', 'Italian Proverb']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-  var quote = quotes[Math.floor(Math.random()*quotes.length)];
+  var availableCollection = JSON.parse(localStorage.getItem('quotes'));
+  var remainingQuantity = availableCollection ? availableCollection.length : 0
+
+  if (remainingQuantity > 0 || remainingQuantity != quotes.length) {
+    availableCollection = quotes
+  }
+
+  var index = Math.floor(Math.random()*remainingQuantity)
+  var quote = availableCollection[index];
 
   document.getElementById('quote-line').innerHTML = quote[0];
   document.getElementById('quote-author').innerHTML = quote[1];
+  availableCollection.splice(index, 1);
+
+  localStorage.setItem('quotes', JSON.stringify(availableCollection));
 });
