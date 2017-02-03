@@ -195,6 +195,7 @@ var quotes = [
   ['Memory is the mother of all wisdom.', 'Aeschylus'],
   ['It is change; all yields its place and goes.', 'Euripides'],
   ['You will stir up the hornets.', 'Plautus'],
+  ['Not by age but by capacity is wisdom acquired.', 'Plautus'],
   ['There is no book so bad that it is not profitable in some part.', 'Pliny the Younger'],
   ['The physician can bury his mistakes, but the architect can only advise his client to plant vines.', 'Frank Lloyd Wright'],
   ['Thou shalt not muzzle the ox when he treadeth out the corn.', 'Deuteronomy 25:4'],
@@ -205,6 +206,8 @@ var quotes = [
   ['Bronze is the mirror of the form, wine of the mind.', 'Aeschylus'],
   ['You and I come by road or rail, but economists travel on infrastructure.', 'Margaret Thatcher'],
   ['The single biggest problem in communication is the illusion that it has taken place.', 'George Bernard Shaw'],
+  ['He who can, does. He who cannot, teaches.', 'George Bernard Shaw']
+  ['Write your Sad times in Sand, Write your Good times in Stone.', 'George Bernard Shaw']
   ['Woe to me, my mother, that you have borne me As a man of strife and a man of contention to all the land! I have not lent, nor have men lent money to me, Yet everyone curses me.', 'Jeremiah 15:10'],
   ['War does not determine who is right - only who is left.', 'Bertrand Russell'],
   ['People never lie so much as after a hunt, during a war or before an election.', 'Otto von Bismarck'],
@@ -269,7 +272,18 @@ var quotes = [
   ['Revolutions, we must remember, are always made by minorities.', 'Peter Kropotkin'],
   ['As an anarchist, I cannot reconcile myself to any government.', 'Peter Kropotkin'],
   ['Idlers do not make history: they suffer it!', 'Peter Kropotkin'],
-  ['We anarchists do not want to emancipate the people; we want the people to emancipate themselves.', 'Errico Malatesta']
+  ['We anarchists do not want to emancipate the people; we want the people to emancipate themselves.', 'Errico Malatesta'],
+  ['The artist belongs to his work, not the work to the artist.', 'Novalis'],
+  ['The artist is nothing without the gift, but the gift is nothing without work.', 'Emile Zola'],
+  ['Pictures must not be too picturesque.', 'Ralph Waldo Emerson'],
+  ['The Holy Roman Empire is neither Holy, nor Roman, nor an Empire.', 'Voltaire'],
+  ['One catches more flies with a spoonful of honey than with twenty casks of vinegar.', 'Henry IV of France'],
+  ['When a king creates an office, Providence creates immediately a fool to buy it.', 'Jean-Baptiste Colbert'],
+  ['There is nothing left to me but honor, and my life, which is saved.', 'Francis I of France'],
+  ['All is lost! Monks, Monks, Monks! So, now all is gone - Empire, Body, and Soul!.', 'Henry VIII of England'],
+  ['Deception is the knowledge of kings.', 'Cardinal Richelieu'],
+  ['Judge a man by his questions rather than his answers.', 'Voltaire'],
+  ['I find medicine is the best of all trades because whether you do any good or not you still. Get your money.', 'Moliere']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
