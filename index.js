@@ -207,7 +207,8 @@ var quotes = [
   ['You and I come by road or rail, but economists travel on infrastructure.', 'Margaret Thatcher'],
   ['The single biggest problem in communication is the illusion that it has taken place.', 'George Bernard Shaw'],
   ['He who can, does. He who cannot, teaches.', 'George Bernard Shaw']
-  ['Write your Sad times in Sand, Write your Good times in Stone.', 'George Bernard Shaw']
+  ['Write your Sad times in Sand, Write your Good times in Stone.', 'George Bernard Shaw'],
+  ['Tradition will accustom people to any atrocity', 'George Bernard Shaw']
   ['Woe to me, my mother, that you have borne me As a man of strife and a man of contention to all the land! I have not lent, nor have men lent money to me, Yet everyone curses me.', 'Jeremiah 15:10'],
   ['War does not determine who is right - only who is left.', 'Bertrand Russell'],
   ['People never lie so much as after a hunt, during a war or before an election.', 'Otto von Bismarck'],
@@ -283,7 +284,19 @@ var quotes = [
   ['All is lost! Monks, Monks, Monks! So, now all is gone - Empire, Body, and Soul!.', 'Henry VIII of England'],
   ['Deception is the knowledge of kings.', 'Cardinal Richelieu'],
   ['Judge a man by his questions rather than his answers.', 'Voltaire'],
-  ['I find medicine is the best of all trades because whether you do any good or not you still. Get your money.', 'Moliere']
+  ['I find medicine is the best of all trades because whether you do any good or not you still. Get your money.', 'Moliere'],
+  ['When you doubt your power, you give power to your doubt.', 'Honore de Balzac'],
+  ['Laws are spider webs through which the big flies pass and the little ones get caught.', 'Honore de Balzac'],
+  ['The best way to make your dreams come true is to wake up.', 'Paul Valery'],
+  ['A poem is never finished, only abandoned.', 'Paul Valery'],
+  ['We hope vaguely but dread precisely.', 'Paul Valery'],
+  ['Serious people have few ideas. People with ideas are never serious.', 'Paul Valery'],
+  ['Books have the same enemies as people: fire, humidity, animals, weather, and their own content.', 'Paul Valery'],
+  ['A good name is better than fine perfume, and the day of death better than the day of birth.', 'Ecclesiastes 7:1'],
+  ['It is better to live alone in the desert than with a crabby, complaining wife.', 'Proverbs 21:19'],
+  [' I recommend the enjoyment of life, for there is nothing better on earth for a person to do except to eat, drink, and enjoy life.', 'Ecclesiastes 8:15'],
+  ['Stone is heavy and sand a burden, but a fool\'s provocation is heavier than both.', 'Proverbs 27:3'],
+  ['Death and Destruction are never satisfied, and neither are human eyes.', 'Proverbs 27:20']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
