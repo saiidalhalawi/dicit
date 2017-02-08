@@ -296,7 +296,13 @@ var quotes = [
   ['It is better to live alone in the desert than with a crabby, complaining wife.', 'Proverbs 21:19'],
   [' I recommend the enjoyment of life, for there is nothing better on earth for a person to do except to eat, drink, and enjoy life.', 'Ecclesiastes 8:15'],
   ['Stone is heavy and sand a burden, but a fool\'s provocation is heavier than both.', 'Proverbs 27:3'],
-  ['Death and Destruction are never satisfied, and neither are human eyes.', 'Proverbs 27:20']
+  ['Death and Destruction are never satisfied, and neither are human eyes.', 'Proverbs 27:20'],
+  ['The best physician is also a philosopher.', 'Galen'],
+  ['Wine is the nurse of old age.', 'Galen'],
+  ['The greatest medicine of all is teaching people how not to need it', 'Hippocrates'],
+  ['The physician treats, but nature heals.', 'Hippocrates'],
+  ['If you are not your own doctor, you are a fool.', 'Hippocrates'],
+  ['Make a habit of two things: to help; or at least to do no harm.', 'Hippocrates']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
