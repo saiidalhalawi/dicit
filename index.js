@@ -302,7 +302,26 @@ var quotes = [
   ['The greatest medicine of all is teaching people how not to need it', 'Hippocrates'],
   ['The physician treats, but nature heals.', 'Hippocrates'],
   ['If you are not your own doctor, you are a fool.', 'Hippocrates'],
-  ['Make a habit of two things: to help; or at least to do no harm.', 'Hippocrates']
+  ['Make a habit of two things: to help; or at least to do no harm.', 'Hippocrates'],
+  ['By desiring little, a poor man makes himself rich.', 'Democritos'],
+  ['Each man believes only his experience.', 'Empedocles'],
+  ['Iris from sea brings wind or mighty rain.', 'Empedocles'],
+  ['To be independent of public opinion is the first formal condition of achieving anything great.', 'Georg Wilhelm Friedrich Hegel'],
+  ['We learn from history that we do not learn from history.', 'Georg Wilhelm Friedrich Hegel'],
+  ['The owl of Minerva spreads its wings only with the falling of the dusk.', 'Georg Wilhelm Friedrich Hegel'],
+  ['Education is the art of making man ethical.', 'Georg Wilhelm Friedrich Hegel'],
+  ['They don\'t know it, but they are doing it.', 'Karl Marx'],
+  ['Be careful to trust a person who does not like wine.', 'Karl Marx'],
+  ['The production of too many useful things results in too many useless people.', 'Karl Marx'],
+  ['For the bureaucrat, the world is a mere object to be manipulated by him.', 'Karl Marx'],
+  ['The fate of our times is characterized by rationalization and intellectualization and, above all, by the disenchantment of the world.', 'Max Weber'],
+  ['Either one lives for politics or one lives off politics.', 'Max Weber'],
+  ['Schools serve the same social functions as prisons and mental institutions- to define, classify, control, and regulate people.', 'Michel Foucault'],
+  ['Where there is power, there is resistance.', 'Michel Foucault'],
+  ['Our society is not one of spectacle but of surveillance.', 'Michel Foucault'],
+  ['I\'m no prophet. My job is making windows where there were once walls.', 'Michel Foucault'],
+  ['One makes war to win, not because it\'s just.', 'Michel Foucault'],
+  ['It is meaningless to speak in the name of - or against - Reason, Truth, or Knowledge.', 'Michel Foucault']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
