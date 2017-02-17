@@ -101,6 +101,8 @@ var quotes = [
   ['Furthermore, I think Carthage must be destroyed.', 'Cato the Elder'],
   ['I prefer to do right and get no thanks than to do wrong and receive no punishment.', 'Cato the Elder'],
   ['Truth is often eclipsed but never extinguished.', 'Livy'],
+  ['Envy, like flames, soars upwards.', 'Livy'],
+  ['Woe to the conquered.', 'Livy'],
   ['Acquaintance lessens fame.', 'Claudius, Roman Emperor'],
   ['Say not always what you know, but always know what you say.', 'Claudius, Roman Emperor'],
   ['Death is less bitter punishment than death\'s delay.', 'Ovid'],
@@ -321,7 +323,21 @@ var quotes = [
   ['Our society is not one of spectacle but of surveillance.', 'Michel Foucault'],
   ['I\'m no prophet. My job is making windows where there were once walls.', 'Michel Foucault'],
   ['One makes war to win, not because it\'s just.', 'Michel Foucault'],
-  ['It is meaningless to speak in the name of - or against - Reason, Truth, or Knowledge.', 'Michel Foucault']
+  ['It is meaningless to speak in the name of - or against - Reason, Truth, or Knowledge.', 'Michel Foucault'],
+  ['A good shepherd shears his flock, not flays them.', 'Suetonius'],
+  ['Whilst we deliberate how to begin a thing, it grows too late to begin it.', 'Quintilian'],
+  ['If you see the teeth of the lion, do not think that the lion is smiling at you.', 'Al-Mutanabbi'],
+  ['It is better to be on hand with ten men than absent with ten thousand.', 'Timur'],
+  ['What really counts are good endings, not flawed beginnings.', 'Ibn Taymiyyah'],
+  ['If I don\'t enjoy myself now, when shall I?', 'Omar Khayyam'],
+  ['He who has one enemy shall meet him everywhere.', 'Omar Khayyam'],
+  ['You know how little while we have to stay, And, once departed, may return no more.', 'Omar Khayyam'],
+  ['A drink is shorter than a tale.', 'Omar Khayyam'],
+  ['Laugh because that is the purest sound.', 'Hafez'],
+  ['There is A madman inside of you. Who is always running for office', 'Hafez'],
+  ['Poetry reveals that there is no empty space.', 'Hafez'],
+  ['Diversity in counsel, unity in command.', 'Cyrus the Great'],
+  ['The Athenians govern the Greeks; I govern the Athenians; you, my wife, govern me; your son governs you.', 'Themistocles']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
