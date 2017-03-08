@@ -285,6 +285,8 @@ var quotes = [
   ['There is nothing left to me but honor, and my life, which is saved.', 'Francis I of France'],
   ['All is lost! Monks, Monks, Monks! So, now all is gone - Empire, Body, and Soul!.', 'Henry VIII of England'],
   ['Deception is the knowledge of kings.', 'Cardinal Richelieu'],
+  ['Never write a letter and never destroy one.', 'Cardinal Richelieu'],
+  ['A single word has sometimes lost or won an empire.', 'Cardinal Richelieu']
   ['Judge a man by his questions rather than his answers.', 'Voltaire'],
   ['I find medicine is the best of all trades because whether you do any good or not you still. Get your money.', 'Moliere'],
   ['When you doubt your power, you give power to your doubt.', 'Honore de Balzac'],
@@ -337,7 +339,15 @@ var quotes = [
   ['There is A madman inside of you. Who is always running for office', 'Hafez'],
   ['Poetry reveals that there is no empty space.', 'Hafez'],
   ['Diversity in counsel, unity in command.', 'Cyrus the Great'],
-  ['The Athenians govern the Greeks; I govern the Athenians; you, my wife, govern me; your son governs you.', 'Themistocles']
+  ['The Athenians govern the Greeks; I govern the Athenians; you, my wife, govern me; your son governs you.', 'Themistocles'],
+  ['The end of wisdom is consultation and deliberation.', 'Demosthenes'],
+  ['In war, truth is the first casualty.', 'Aeschylus'],
+  ['My will is mine...I shall not make it soft for you.', 'Aeschylus'],
+  ['The world began without man, and it will complete itself without him.', 'Claude Levi-Strauss'],
+  ['People know what they do; frequently they know why they do what they do; but what they don\'t know is what what they do does.', 'Michel Foucault'],
+  ['If I only did what I can do, I wouldn\t do anything', 'Jacques Derrida'],
+  ['Everything is arranged so that it be this way, this is what is called culture.', 'Jacques Derrida'],
+  ['O death! We thank you for the light that you will shed upon our ignorance.', 'Jacques-Benigne Bossuet']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
