@@ -347,7 +347,11 @@ var quotes = [
   ['People know what they do; frequently they know why they do what they do; but what they don\'t know is what what they do does.', 'Michel Foucault'],
   ['If I only did what I can do, I wouldn\t do anything', 'Jacques Derrida'],
   ['Everything is arranged so that it be this way, this is what is called culture.', 'Jacques Derrida'],
-  ['O death! We thank you for the light that you will shed upon our ignorance.', 'Jacques-Benigne Bossuet']
+  ['O death! We thank you for the light that you will shed upon our ignorance.', 'Jacques-Benigne Bossuet'],
+  ['All is asleep: the army, the wind, and Neptune.', 'Jean Raine'],
+  ['He who will travel far spares his steed.', 'Jean Raine'],
+  ['Too much virtue can be criminal.', 'Jean Raine'],
+  ['He who laughs on Friday will weep on Sunday.', 'Jean Raine']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
