@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "dicit",
-  "description": "A Chrome extension display a historical quote in everytime when new tab opened.",
+  "description": "A Chrome extension that displays a quote every time a new tab is opened. every quote related to history, phirosophy or art.",
   "version": "1.0.2",
   "icons": {
     "16": "icons/icon16.png",
