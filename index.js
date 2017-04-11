@@ -103,6 +103,7 @@ var quotes = [
   ['Truth is often eclipsed but never extinguished.', 'Livy'],
   ['Envy, like flames, soars upwards.', 'Livy'],
   ['Woe to the conquered.', 'Livy'],
+  ['All religions are equally sublime to the ignorant, useful to the politician, and ridiculous to the philosopher.', 'Livy'],
   ['Acquaintance lessens fame.', 'Claudius, Roman Emperor'],
   ['Say not always what you know, but always know what you say.', 'Claudius, Roman Emperor'],
   ['Death is less bitter punishment than death\'s delay.', 'Ovid'],
@@ -219,6 +220,7 @@ var quotes = [
   ['I will not wear a crown of gold where my Savior wore one of thorns', 'Godfrey of Bouillon'],
   ['Death twitches my ear. Live, he says, I am coming.', 'Virgil'],
   ['Fortune sides with him who dares.', 'Virgil'],
+  ['To have died once is enough.', 'Virgil'],
   ['Any old woman can love God better than a doctor of theology can.', 'Bonaventure'],
   ['The three most important virtues are humility, humility, and humility.', 'Bernard of Clairvaux'],
   ['Give light, and the darkness will disappear of itself.', 'Desiderius Erasmus'],
@@ -318,6 +320,7 @@ var quotes = [
   ['Be careful to trust a person who does not like wine.', 'Karl Marx'],
   ['The production of too many useful things results in too many useless people.', 'Karl Marx'],
   ['For the bureaucrat, the world is a mere object to be manipulated by him.', 'Karl Marx'],
+  ['History repeats itself, first as tragedy, second as farce.', 'Karl Marx'],
   ['The fate of our times is characterized by rationalization and intellectualization and, above all, by the disenchantment of the world.', 'Max Weber'],
   ['Either one lives for politics or one lives off politics.', 'Max Weber'],
   ['Schools serve the same social functions as prisons and mental institutions- to define, classify, control, and regulate people.', 'Michel Foucault'],
@@ -351,7 +354,24 @@ var quotes = [
   ['All is asleep: the army, the wind, and Neptune.', 'Jean Raine'],
   ['He who will travel far spares his steed.', 'Jean Raine'],
   ['Too much virtue can be criminal.', 'Jean Raine'],
-  ['He who laughs on Friday will weep on Sunday.', 'Jean Raine']
+  ['He who laughs on Friday will weep on Sunday.', 'Jean Raine'],
+  ['The direct use of force is such a poor solution to any problem, it is generally employed only by small children and large nations.', 'David Friedman'],
+  ['The users space is lived - not represented or conceived.', 'Henry Lefebvre'],
+  ['I am interested in language because it wounds or seduces me.', 'Roland Barthes'],
+  ['...language is never innocent.', 'Roland Barthes'],
+  ['To make someone wait: the constant prerogative of all power.', 'Roland Barthes'],
+  ['Literature is the question minus the answer.', 'Roland Barthes'],
+  ['To philosophize with open eyes is to philosophize in the dark. Only the blind can look straight at the sun.', 'Louis Althusser'],
+  ['If someone asks, ‘But what in the end is a philosopher?’ I would say ‘A philosopher is a human being who fights in theory.', 'Louis Althusser'],
+  ['Bilingualism is for me the fundamental problem of linguistics.', 'Roman Jakobson'],
+  ['The most difficult step in the study of language is the first step.', 'Leonard Bloomfield'],
+  ['There is no fundamental difference in the ways of thinking of primitive and civilized man. A close connection between race and personality has never been established.', 'Franz Boas'],
+  ['We do not condemn it because it is a crime, but it is a crime because we condemn it.', 'Emile Durkheim'],
+  ['When morals are sufficient, law is unnecessary; when morals are insufficient, law is unenforceable.', 'Emile Durkheim'],,
+  ['When man discovered the mirror, he began to lose his soul.', 'Emile Durkheim'],
+  ['It is science, and not religion, which has taught men that things are complex and difficult to understand.', 'Emile Durkheim'],
+  ['The risk climate of modernity is thus unsettling for everyone: no one escapes.', 'Anthony Giddens']
+  ['The body is thus not simply an \'entity\', but is experienced as a practical mode of coping with external situations and events.', 'Anthony Giddens']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
