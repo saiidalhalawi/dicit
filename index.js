@@ -37,6 +37,9 @@ var quotes = [
   ['O Liberty! What crimes are committed in thy name!', 'Madame Roland'],
   ['Put your shoulder to the wheel.', 'Aesop'],
   ['Oh farmers, pray that your summers be wet and your winters clear.', 'Virgil'],
+  ['Trust not too much to appearances.', 'Virgil'],
+  ['I fear the Greeks, even when they bring gifts.', 'Virgil'],
+  ['Mind moves matter.', 'Vergil']
   ['Hath not the potter power over the clay, of the same lump to make one vessel unto honour, and another unto dishonour?', 'Romans 9:21'],
   ['Do not throw the arrow which will return against you.', 'Kurdistan proverb'],
   ['It is from their foes, not their friends, that cities learn the lesson of building high walls.', 'Aristophanes'],
@@ -126,6 +129,9 @@ var quotes = [
   ['Don\'t forget your great guns, which are the most respectable arguments of the rights of kings.', 'Frederick the Great'],
   ['A crown is merely a hat that lets the rain in.', 'Frederick the Great'],
   ['The souls of emperors and cobblers are cast in the same mold.', 'Michel de Montaigne'],
+  ['The most certain sign of wisdom is cheerfulness.', 'Michel de Montaigne'],
+  ['I am myself the matter of my book.', 'Michel de Montaigne'],
+  ['When I quote others I do so in order to express my own ideas more clearly.', 'Michel de Montaigne'],
   ['Once a word has been allowed to escape, it cannot be recalled.', 'Horace'],
   ['O imitators, you slavish herd!', 'Horace'],
   ['Potter is jealous of potter, and craftsman of craftsman; and the poor have a grudge against the poor, and the poet against the poet.', 'Hesiod'],
@@ -253,11 +259,13 @@ var quotes = [
   ['It is easiest to learn from another man\'s damage.', 'Venetian Proverb'],
   ['Crooked logs make straight fires.', 'Italian Proverb'],
   ['Writing is easy. All you have to do is cross out the wrong words.', 'Mark Twain'],
+  ['Man is the Only Animal that blushes. Or needs to.', 'Mark Twain'],
+  ['I don\'t like to commit myself about Heaven and Hell, you see, I have friends in both places', 'Mark Twain'],
+  ['Cauliflower is nothing but cabbage with a college education.', 'Mark Twain']
   ['Remember that people break down, too, not just machinery.', 'Gregory Benford'],
   ['If you wish for peace, prepare for war.', 'Motto of the British Royal Navy'],
   ['Untutored courage is useless in the face of educated bullets.', 'George Patton'],
   ['It is not wisdom but authority that makes a law.', 'Thomas Hobbes'],
-  ['I don\'t like to commit myself about Heaven and Hell, you see, I have friends in both places', 'Mark Twain'],
   ['When they are preparing for war, those who rule by force speak most copiously about peace until they have completed the mobilization process.', 'Stefan Zweig'],
   ['Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.', 'Marcus Aurelius'],
   ['Let the boy win his spurs.', 'Edward III of England'],
@@ -371,7 +379,15 @@ var quotes = [
   ['When man discovered the mirror, he began to lose his soul.', 'Emile Durkheim'],
   ['It is science, and not religion, which has taught men that things are complex and difficult to understand.', 'Emile Durkheim'],
   ['The risk climate of modernity is thus unsettling for everyone: no one escapes.', 'Anthony Giddens']
-  ['The body is thus not simply an \'entity\', but is experienced as a practical mode of coping with external situations and events.', 'Anthony Giddens']
+  ['The body is thus not simply an \'entity\', but is experienced as a practical mode of coping with external situations and events.', 'Anthony Giddens'],
+  ['Oh, this age! How tasteless and ill bred it is!', 'Catullus'],
+  ['There is nothing more foolish than a foolish laugh.', 'Catullus'],
+  ['The worst thing about getting old is evil men cease to fear you', 'Seneca the Younger'],
+  ['We become wiser by adversity; prosperity destroys our appreciation of the right.', 'Seneca the Younger'],
+  ['Politicians are not born; they are excreted.', 'Marcus Tullius Cicero'],
+  ['If you have a garden and a library, you have everything you need.', 'Marcus Tullius Cicero'],
+  ['Any man can make mistakes, but only an idiot persists in his error.', 'Marcus Tullius Cicero'],
+  ['Follow your path, and let the people talk.', 'Dante Alighieri']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
