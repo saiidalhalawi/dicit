@@ -387,7 +387,9 @@ var quotes = [
   ['Politicians are not born; they are excreted.', 'Marcus Tullius Cicero'],
   ['If you have a garden and a library, you have everything you need.', 'Marcus Tullius Cicero'],
   ['Any man can make mistakes, but only an idiot persists in his error.', 'Marcus Tullius Cicero'],
-  ['Follow your path, and let the people talk.', 'Dante Alighieri']
+  ['Follow your path, and let the people talk.', 'Dante Alighieri'],
+  ['The nourishment of body is food, while the nourishment of the soul is feeding others.', 'Ali ibn Abi Ṭalib'],
+  
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
