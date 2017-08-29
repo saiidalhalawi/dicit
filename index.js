@@ -389,7 +389,16 @@ var quotes = [
   ['Any man can make mistakes, but only an idiot persists in his error.', 'Marcus Tullius Cicero'],
   ['Follow your path, and let the people talk.', 'Dante Alighieri'],
   ['The nourishment of body is food, while the nourishment of the soul is feeding others.', 'Ali ibn Abi Ṭalib'],
-  
+  ['Meetings are indispensable when you don\'t want to do anything.', 'John Kenneth Galbraith'],
+  ['All successful revolutions are the kicking in of a rotten door.', 'John Kenneth Galbraith'],
+  ['The only function of economic forecasting is to make astrology look respectable.', 'John Kenneth Galbraith'],
+  ['Economics is extremely useful as a form of employment for economists.', 'John Kenneth Galbraith'],
+  ['Liberty becomes a question of morals more than of politics.', 'Lord John Acton'],
+  ['Although it is not true that all conservatives are stupid people, it is true that most stupid people are conservative.', 'John Stuart Mill'],
+  ['One person with a belief is equal to ninety-nine who have only interests.', 'John Stuart Mill'],
+  ['Men do not desire to be rich, but to be richer than other men.', 'John Stuart Mill'],
+  ['He who does anything because it is the custom, makes no choice.', 'John Stuart Mill']
+
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
