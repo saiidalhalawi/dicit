@@ -417,7 +417,15 @@ var quotes = [
   ['Nothing is easier than self-deceit.', 'Demosthenes'],
   ['Of all our possessions, wisdom alone is imortal.', 'Isocrates'],
   ['Right is not unlimited, but is limited by the laws.', 'Aeschines'],
-
+  ['No battle plan ever survives contact with the enemy.', 'Helmuth von Moltke the Elder'],
+  ['Plans are worthless, but planning is everything.', 'Dwight D. Eisenhower'],
+  ['I cannot trust a man to control others who cannot control himself.', 'Robert E. Lee'],
+  ['The world needs leaders of vision instead of leaders on television.', 'Lech Walesa'],
+  ['I\'m lazy. But it\'s the lazy people who invented the wheel and the bicycle because they didn\'t like walking or carrying things.', 'Lech Walesa'],
+  ['I must tell you that the supply of words on the world market is plentiful, but the demand is falling.', 'Lech Walesa'],
+  ['Historians are like deaf people who go on answering questions that no one has asked them.', 'Leo Tolstoy'],
+  ['The causes of events are ever more interesting than the events themselves.', 'Cicero'],
+  ['God cannot alter the past, though historians can.', 'Samuel Butler']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
