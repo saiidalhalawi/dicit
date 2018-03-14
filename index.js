@@ -425,7 +425,13 @@ var quotes = [
   ['I must tell you that the supply of words on the world market is plentiful, but the demand is falling.', 'Lech Walesa'],
   ['Historians are like deaf people who go on answering questions that no one has asked them.', 'Leo Tolstoy'],
   ['The causes of events are ever more interesting than the events themselves.', 'Cicero'],
-  ['God cannot alter the past, though historians can.', 'Samuel Butler']
+  ['God cannot alter the past, though historians can.', 'Samuel Butler'],
+  ['I shall take no wife, hold no lands, father no children. I shall wear no crowns and win no glory. I shall live and die at my post. I am the sword in the darkness. I am the watcher on the walls.', 'George R.R. Martin, The oath of Night\'s Watch'],
+  ['He who is virtuous is wise; and he who is wise is good; and he who is good is happy.', 'Boethius'],
+  ['“Nothing is miserable unless you think it so.', 'Boethius'],
+  ['At the heart of capitalism is creative destruction.', 'Joseph A. Schumpeter'],
+  ['The ballot is stronger than bullets.','Joseph A. Schumpeter'],
+  ['Politicians like to tell people what they want to hear - and what they want to hear is what won\'t happen.', 'Paul Samuelson']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
