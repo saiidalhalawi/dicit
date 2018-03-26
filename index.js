@@ -431,7 +431,14 @@ var quotes = [
   ['“Nothing is miserable unless you think it so.', 'Boethius'],
   ['At the heart of capitalism is creative destruction.', 'Joseph A. Schumpeter'],
   ['The ballot is stronger than bullets.','Joseph A. Schumpeter'],
-  ['Politicians like to tell people what they want to hear - and what they want to hear is what won\'t happen.', 'Paul Samuelson']
+  ['Politicians like to tell people what they want to hear - and what they want to hear is what won\'t happen.', 'Paul Samuelson'],
+  ['Everything in the world exists in order to end up as a book.', 'Stéphane Mallarmé'],
+  ['The flesh is sad, alas, and I have read all the books.', 'Stéphane Mallarmé'],
+  ['Poetry is the language of a state of crisis.', 'Stéphane Mallarmé'],
+  ['If you want money more than anything, you\'ll be bought and sold.', 'Rumi'],
+  ['Clean out your ears, don\'t listen for what you already know.', 'Rumi'],
+  ['Life is balance of holding on and letting go.', 'Rumi'],
+  ['If you are looking for a friend who is faultless, you will be friendless.', 'Rumi']
 ]
 
 document.addEventListener("DOMContentLoaded", function(event) {
