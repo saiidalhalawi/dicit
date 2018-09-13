@@ -11,6 +11,7 @@ const config: webpack.Configuration = {
   resolve: {
     extensions: ['.js', '.ts', '.tsx', '.css', ".json"]
   },
+  devtool: "source-map",
   module: {
     rules: [
       {
