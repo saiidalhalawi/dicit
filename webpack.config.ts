@@ -9,6 +9,10 @@ const config: webpack.Configuration = {
     filename: 'bundle.js'
   },
   resolve: {
+    modules:  [
+      path.resolve('./node_modules'),
+      path.resolve('./src')
+    ],
     extensions: ['.js', '.ts', '.tsx', '.css', ".json"]
   },
   devtool: "source-map",
