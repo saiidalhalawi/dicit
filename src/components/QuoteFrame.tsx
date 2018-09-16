@@ -1,16 +1,16 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { QuoteSentence } from "./QuoteSentence";
-import { QuoteAuthor } from "./QuoteAuthor";
+import { QuoteAuthor } from './QuoteAuthor';
+import { QuoteSentence } from './QuoteSentence';
 
 interface Quote {
-  sentence: string,
-  author: string
+  sentence: string;
+  author: string;
 }
 
 export type QuoteFrameProps = {
-  quote: Quote
-}
+  quote: Quote;
+};
 
 const styles = `
   .quote-frame {
@@ -21,14 +21,14 @@ const styles = `
     margin: 10% auto;
     width: 85%;
   }
-`
+`;
 
 export const QuoteFrame = (props: QuoteFrameProps) => (
   <div className="quote-frame">
     <style>
       {styles}
     </style>
-    <QuoteSentence sentence={ props.quote.sentence } />
-    <QuoteAuthor name={ props.quote.author } />
+    <QuoteSentence sentence={props.quote.sentence} />
+    <QuoteAuthor name={props.quote.author} />
   </div>
-)
+);

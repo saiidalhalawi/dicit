@@ -1,8 +1,8 @@
-import * as React from "react"
+import * as React from 'react';
 
 export type QuoteAuthorProps = {
-  name: string
-}
+  name: string;
+};
 
 const styles = `
 .quote-author {
@@ -24,13 +24,13 @@ const styles = `
   75%    { opacity: .25; }
   100%   { opacity: 1; }
 }
-`
+`;
 
 export const QuoteAuthor = (props: QuoteAuthorProps) => (
   <div className="quote-author">
     <style>
       {styles}
     </style>
-    <p>{ props.name }</p>
+    <p>{props.name}</p>
   </div>
-)
+);
