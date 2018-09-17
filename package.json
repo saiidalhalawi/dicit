@@ -1,6 +1,6 @@
 {
   "name": "dicit",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "**A Chrome extension that displays a historical quote every time a new tab is opened.**",
   "main": "index.js",
   "scripts": {
