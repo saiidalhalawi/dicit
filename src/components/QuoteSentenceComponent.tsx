@@ -23,7 +23,7 @@ const styles = `
 }
 `;
 
-export const QuoteSentence = (props: QuoteSentenceProps) => (
+export const QuoteSentenceComponent = (props: QuoteSentenceProps) => (
   <div className="quote-line">
     <style>
       {styles}
