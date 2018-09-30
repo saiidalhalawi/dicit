@@ -6,22 +6,22 @@ const config: webpack.Configuration = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   resolve: {
     modules:  [
       path.resolve('./node_modules'),
-      path.resolve('./src')
+      path.resolve('./src'),
     ],
-    extensions: ['.js', '.ts', '.tsx', '.css', ".json"]
+    extensions: ['.js', '.ts', '.tsx', '.css', '.json'],
   },
-  devtool: "source-map",
+  devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: 'awesome-typescript-loader'
+        use: 'awesome-typescript-loader',
       },
       {
         test: /\.css$/,
@@ -34,13 +34,13 @@ const config: webpack.Configuration = {
             options: {
               sourceMap: true,
               plugins: [
-                autoprefixer()
-              ]
-            }
-          }
-        ]
-      }
-    ]
+                autoprefixer(),
+              ],
+            },
+          },
+        ],
+      },
+    ],
   },
   devServer: {
     inline: true,
@@ -48,9 +48,9 @@ const config: webpack.Configuration = {
     publicPath: 'http://localhost:8080/',
     stats: {
       assets: false,
-      modules: false
-    }
-  }
+      modules: false,
+    },
+  },
 };
 
 export default config;
