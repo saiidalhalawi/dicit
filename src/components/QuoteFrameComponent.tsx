@@ -20,12 +20,16 @@ const styles = `
   }
 `;
 
-export const QuoteFrameComponent: React.SFC<QuoteProps>  = (props: QuoteProps) => (
-  <div className="quote-frame">
-    <style>
-      {styles}
-    </style>
-    <QuoteSentenceComponent sentence={props.quote.sentence} />
-    <QuoteAuthorComponent name={props.quote.author} />
-  </div>
-);
+export class QuoteFrameComponent extends React.Component<QuoteProps> {
+  public render(): JSX.Element {
+    return (
+      <div className="quote-frame">
+        <style>
+          {styles}
+        </style>
+        <QuoteSentenceComponent sentence={this.props.quote.sentence} />
+        <QuoteAuthorComponent name={this.props.quote.author} />
+      </div>
+    );
+  }
+}

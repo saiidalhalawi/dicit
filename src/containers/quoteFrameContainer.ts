@@ -8,13 +8,13 @@ import { QuoteFrameComponent } from '../components/QuoteFrameComponent';
 
 export interface DicitActions {
   init: () => Action<any>;
-  fetchQuote: () => Action<any>;
+  fetchNewQuote: () => Action<any>;
 }
 
 function mapDispatchToProps(dispatch: Dispatch) {
   return {
     init: () => dispatch(dicitActions.init()),
-    fetchQuote: () => dispatch(dicitActions.fetchQuote()),
+    fetchNewQuote: () => dispatch(dicitActions.fetchNewQuote()),
   };
 }
 
