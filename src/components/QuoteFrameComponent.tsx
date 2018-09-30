@@ -1,21 +1,13 @@
 import * as React from 'react';
-
-import { QuoteState } from '../reducers/quotes';
-import { QuoteActions } from '../containers/quoteFrameContainer';
+import { DicitState } from '../reducers/quotes';
+import { DicitActions } from '../containers/QuoteFrameContainer';
 
 import { QuoteAuthorComponent } from './QuoteAuthorComponent';
 import { QuoteSentenceComponent } from './QuoteSentenceComponent';
 
-interface Quote {
-  sentence: string;
-  author: string;
-}
+// interface QuoteFrameProps = {};
 
-export type QuoteFrameProps = {
-  quote: Quote;
-};
-
-type QuoteProps = QuoteFrameProps & QuoteState & QuoteActions;
+type QuoteProps = DicitState & DicitActions;
 
 const styles = `
   .quote-frame {

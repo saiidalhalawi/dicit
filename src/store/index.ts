@@ -1,15 +1,14 @@
 import { createStore, combineReducers } from 'redux';
 
-import { quotesReducer } from '../reducers/quotes';
-import { Quote } from '../states/QuoteState';
+import { quotesReducer, DicitState } from '../reducers/quotes';
 
 export type AppState = {
-  quote: Quote;
+  dicit: DicitState;
 };
 
 const store = createStore(
   combineReducers<AppState>({
-    quote: quotesReducer,
+    dicit: quotesReducer,
   })
 );
 export default store;

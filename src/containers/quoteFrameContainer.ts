@@ -3,26 +3,23 @@ import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 
 import { AppState } from '../store';
-import { quoteActions } from '../actions';
-import { Quotes } from '../states/QuoteState';
+import { dicitActions } from '../actions';
 import { QuoteFrameComponent } from '../components/QuoteFrameComponent';
 
-interface StateFromProps {
-  quotes: Quotes;
+export interface DicitActions {
+  init: () => Action<any>;
+  fetchQuote: () => Action<any>;
 }
 
-interface DispatchFromProps {
-  onClickQuote: (index: number) => void;
-}
-
-function mapDispatchToProps(dispatch: Dispatch<TodoAction>): DispatchFromProps {
+function mapDispatchToProps(dispatch: Dispatch) {
   return {
-    onClickQuote: (index: any) => dispatch(quoteActions.fetchQuote(v)),
+    init: () => dispatch(dicitActions.init()),
+    fetchQuote: () => dispatch(dicitActions.fetchQuote()),
   };
 }
 
-function mapStateToProps(state: Quotes): StateFromProps {
-  return Object.assign({}, appState.quotes);
+function mapStateToProps(state: AppState) {
+  return Object.assign({}, state.dicit);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(QuoteFrameComponent);

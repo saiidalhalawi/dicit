@@ -44,8 +44,8 @@ const config: webpack.Configuration = {
   },
   devServer: {
     inline: true,
-    contentBase: path.resolve(process.cwd(), './dist'),
-    publicPath: 'http://localhost:8080/',
+    // contentBase: path.resolve(process.cwd(), './dist'),
+    publicPath: '/dist/',
     stats: {
       assets: false,
       modules: false,
