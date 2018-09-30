@@ -26,7 +26,7 @@ const styles = `
 }
 `;
 
-export const QuoteAuthor = (props: QuoteAuthorProps) => (
+export const QuoteAuthorComponent = (props: QuoteAuthorProps) => (
   <div className="quote-author">
     <style>
       {styles}
