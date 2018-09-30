@@ -21,6 +21,10 @@ const styles = `
 `;
 
 export class QuoteFrameComponent extends React.Component<QuoteProps> {
+  public componentDidMount(): void {
+    const { rotateQuotes } = this.props;
+    rotateQuotes();
+  }
   public render(): JSX.Element {
     return (
       <div className="quote-frame">

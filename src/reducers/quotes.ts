@@ -32,5 +32,5 @@ export const quotesReducer = reducerWithInitialState(initialState)
     return Object.assign({}, state, { initialState });
   })
   .case(dicitActions.fetchNewQuote, (state) => {
-    return Object.assign({}, state, { initialState });
+    return Object.assign({}, state, { quote: fetchRandomQuote() });
   });

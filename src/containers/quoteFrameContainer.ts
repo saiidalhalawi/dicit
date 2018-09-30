@@ -8,13 +8,15 @@ import { QuoteFrameComponent } from '../components/QuoteFrameComponent';
 
 export interface DicitActions {
   init: () => Action<any>;
-  fetchNewQuote: () => Action<any>;
+  rotateQuotes: () => Action<any>;
 }
 
 function mapDispatchToProps(dispatch: Dispatch) {
   return {
     init: () => dispatch(dicitActions.init()),
-    fetchNewQuote: () => dispatch(dicitActions.fetchNewQuote()),
+    rotateQuotes: () => {
+      setInterval(() => dispatch(dicitActions.fetchNewQuote()), 10000);
+    },
   };
 }
 
