@@ -5,8 +5,6 @@ import { DicitActions } from '../containers/QuoteFrameContainer';
 import { QuoteAuthorComponent } from './QuoteAuthorComponent';
 import { QuoteSentenceComponent } from './QuoteSentenceComponent';
 
-// interface QuoteFrameProps = {};
-
 type QuoteProps = DicitState & DicitActions;
 
 const styles = `
