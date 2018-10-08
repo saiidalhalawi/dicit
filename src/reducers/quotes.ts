@@ -7,7 +7,7 @@ export interface DicitState {
   quote: Quote;
 }
 
-const fetchNewQuote = (): Quote => {
+const fetchRandomQuote = (): Quote => {
   let remainedQuotes = [];
   if ('remainedQuotes' in localStorage) {
     remainedQuotes = JSON.parse(localStorage.getItem('remainedQuotes'));
@@ -25,12 +25,12 @@ const fetchNewQuote = (): Quote => {
   return remainedQuotes[index];
 };
 
-const initialState: DicitState = { quote: fetchNewQuote() };
+const initialState: DicitState = { quote: fetchRandomQuote() };
 
 export const quotesReducer = reducerWithInitialState(initialState)
   .case(dicitActions.init, (state) => {
     return Object.assign({}, state, { initialState });
   })
-  .case(dicitActions.fetchQuote, (state) => {
-    return Object.assign({}, state, { initialState });
+  .case(dicitActions.fetchNewQuote, (state) => {
+    return Object.assign({}, state, { quote: fetchRandomQuote() });
   });

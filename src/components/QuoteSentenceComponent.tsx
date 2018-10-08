@@ -6,16 +6,19 @@ export type QuoteSentenceProps = {
 
 const styles = `
 .quote-line {
-  animation-name: animating-quote;
-  animation-duration: .75s;
-  animation-timing-function: ease-out;
   font-size: 4.5rem;
   margin: 0;
   text-align: left;
+}
+
+.quote-line p {
+  animation-name: fade-quote;
+  animation-duration: .75s;
+  animation-timing-function: ease-out;
   transition-delay: .7s;
 }
 
-@keyframes animating-quote {
+@keyframes fade-quote {
   0%     { opacity: 0; }
   50%    { opacity: 0; }
   75%    { opacity: .25; }
