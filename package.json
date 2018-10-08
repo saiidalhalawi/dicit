@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "development": "webpack-dev-server --mode=development",
+    "development": "webpack-dev-server --mode=development --verbose",
     "production": "webpack --mode=production"
   },
   "repository": {
@@ -22,16 +22,21 @@
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
+    "typescript-fsa": "^3.0.0-beta-2",
+    "typescript-fsa-reducers": "^0.4.5"
   },
   "devDependencies": {
     "@types/autoprefixer": "^6.7.3",
+    "@types/react-redux": "^6.0.9",
     "@types/webpack": "^4.4.11",
     "@types/webpack-dev-server": "^3.1.0",
     "autoprefixer": "^9.1.5",
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^1.0.0",
     "postcss-loader": "^3.0.0",
+    "redux-devtools-extension": "^2.13.5",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.0",
     "ts-node": "^7.0.1",
