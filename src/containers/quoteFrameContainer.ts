@@ -15,7 +15,7 @@ function mapDispatchToProps(dispatch: Dispatch) {
   return {
     init: () => dispatch(dicitActions.init()),
     rotateQuotes: () => {
-      setInterval(() => dispatch(dicitActions.fetchNewQuote()), 5000);
+      setInterval(() => dispatch(dicitActions.fetchNewQuote()), 15000);
     },
   };
 }
