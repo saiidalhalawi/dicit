@@ -9,12 +9,33 @@ type QuoteProps = DicitState & DicitActions;
 
 const styles = `
   .quote-frame {
-    color: '#7b7b84';
-    height: 100%;
+    color: #7b7b84;
+    height: 90%;
     font-family: 'Times New Roman';
     font-style: italic;
-    margin: 10% auto;
-    width: 85%;
+    margin: auto;
+    padding: 3rem 2rem;
+    width: 90%;
+  }
+  .quote-frame:hover {
+    cursor: pointer;
+  }
+  .quote-frame:after {
+    content: '>';
+    font-size: 5rem;
+    font-weight: bolder;
+    opacity: 0;
+    position: fixed;
+    right: 3%;
+    transform: scale(1,2);
+    top: 50%;
+    --webkit--transition: opacity .5s ease-out;
+    transition: opacity 1s ease-out;
+  }
+  .quote-frame:hover:after {
+    opacity: .5;
+    --webkit--transition: opacity .5s ease-in;
+    transition: opacity 1s ease-in;
   }
 `;
 
@@ -25,7 +46,7 @@ export class QuoteFrameComponent extends React.Component<QuoteProps> {
   }
   public render(): JSX.Element {
     return (
-      <div className="quote-frame">
+      <div className="quote-frame" onClick={this.props.handleClick}>
         <style>
           {styles}
         </style>
