@@ -1,11 +1,11 @@
 import * as React from 'react';
+import styled from 'styled-components';
 
 export type QuoteAuthorProps = {
   name: string;
 };
 
-const styles = `
-.quote-author {
+const QuoteAutherWrapper = styled.div`
   animation-name: animating-author;
   animation-duration: 1.25s;
   animation-timing-function: ease-out;
@@ -14,23 +14,16 @@ const styles = `
   text-align: right;
   padding-top: 20px;
   transition-delay: 1.5s;
-}
-.quote-author > p:before {
-  content: '- '
-}
-@keyframes animating-author {
-  0%     { opacity: 0; }
-  50%    { opacity: 0; }
-  75%    { opacity: .25; }
-  100%   { opacity: 1; }
-}
+`;
+
+const QuoteAuther = styled.p`
+  :before {
+    content: '- '
+  }
 `;
 
 export const QuoteAuthorComponent = (props: QuoteAuthorProps) => (
-  <div className="quote-author">
-    <style>
-      {styles}
-    </style>
-    <p>{props.name}</p>
-  </div>
+  <QuoteAutherWrapper >
+    <QuoteAuther>{props.name}</QuoteAuther>
+  </QuoteAutherWrapper>
 );
