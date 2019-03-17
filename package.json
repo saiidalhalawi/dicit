@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "development": "webpack-dev-server --mode=development --verbose",
+    "development": "webpack-dev-server  --mode=development --verbose --hot --inline",
     "production": "webpack --mode=production"
   },
   "repository": {
@@ -21,9 +21,11 @@
   "dependencies": {
     "@types/react": "^16.8.7",
     "@types/react-dom": "^16.8.2",
+    "@types/styled-components": "^4.1.12",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^6.0.1",
+    "styled-components": "^4.1.3",
     "typescript-fsa": "^3.0.0-beta-2",
     "typescript-fsa-reducers": "^1.2.0"
   },
