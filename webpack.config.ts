@@ -15,7 +15,6 @@ const config: webpack.Configuration = {
     ],
     extensions: ['.js', '.ts', '.tsx', '.css', '.json'],
   },
-  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -42,9 +41,9 @@ const config: webpack.Configuration = {
       },
     ],
   },
+  devtool: 'source-map',
   devServer: {
     inline: true,
-    // contentBase: path.resolve(process.cwd(), './dist'),
     publicPath: '/dist/',
     stats: {
       assets: false,
