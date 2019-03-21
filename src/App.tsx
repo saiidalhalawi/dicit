@@ -2,7 +2,6 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import QuoteFrameContainer from './containers/quoteFrameContainer';
-import QuoteStats from './containers/quoteStatsContainer';
 
 const Wrapper = styled.div`
   position: relative;
@@ -15,7 +14,6 @@ class App extends React.Component {
     return (
       <Wrapper>
         <QuoteFrameContainer />
-        <QuoteStats />
       </Wrapper>
     );
   }

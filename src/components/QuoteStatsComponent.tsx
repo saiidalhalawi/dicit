@@ -1,9 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { QuoteStatsState } from '../reducers/stats';
-
-type StatsProps = QuoteStatsState;
+import { QuoteStats } from '../states/QuoteStatsState';
 
 const QuoteStatsFrame = styled.div`
   position: fixed;
@@ -19,10 +17,10 @@ const QuoteStatsContents = styled.span`
   padding: 1rem 0;
 `;
 
-export const QuoteStatsComponent = (props: StatsProps) => {
+export const QuoteStatsComponent = (props: QuoteStats) => {
   return (
     <QuoteStatsFrame>
-      <QuoteStatsContents>{props.stats.consumed} / {props.stats.whole}</QuoteStatsContents>
+      <QuoteStatsContents>{props.consumed} / {props.whole}</QuoteStatsContents>
     </QuoteStatsFrame>
   );
 }

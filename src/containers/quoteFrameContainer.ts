@@ -19,13 +19,13 @@ function mapDispatchToProps(dispatch: Dispatch) {
       dispatch(dicitActions.fetchNewQuote());
     },
     rotateQuotes: () => {
-      setInterval(() => dispatch(dicitActions.fetchNewQuote()), 120000);
+      setInterval(() => dispatch(dicitActions.fetchNewQuote()), 240000);
     },
   };
 }
 
 function mapStateToProps(state: AppState) {
-  return Object.assign({}, state.dicit);
+  return Object.assign({}, state);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(QuoteFrameComponent);
