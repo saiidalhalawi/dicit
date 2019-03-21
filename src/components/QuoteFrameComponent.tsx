@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { DicitState } from '../reducers/quotes';
 import { DicitActions } from '../containers/QuoteFrameContainer';
 
+import { QuoteStatsComponent } from '../components/QuoteStatsComponent';
 import { QuoteAuthorComponent } from './QuoteAuthorComponent';
 import { QuoteSentenceComponent } from './QuoteSentenceComponent';
 
@@ -32,6 +33,7 @@ export class QuoteFrameComponent extends React.Component<QuoteProps> {
       <QuoteFrame onClick={this.props.handleClick}>
         <QuoteSentenceComponent sentence={this.props.quote.sentence} />
         <QuoteAuthorComponent name={this.props.quote.author} />
+        <QuoteStatsComponent whole={this.props.stats.whole} consumed={this.props.stats.consumed} />
       </QuoteFrame>
     );
   }
