@@ -1,12 +1,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { DicitState } from '../reducers/quotes';
-import { DicitActions } from '../containers/QuoteFrameContainer';
+import { DicitState } from '@reducers/quotes';
+import { DicitActions } from '@containers/QuoteFrameContainer';
 
-import { QuoteStatsComponent } from '../components/QuoteStatsComponent';
-import { QuoteAuthorComponent } from './QuoteAuthorComponent';
-import { QuoteSentenceComponent } from './QuoteSentenceComponent';
+import { QuoteStatsComponent } from '@components/QuoteStatsComponent';
+import { QuoteAuthorComponent } from '@components/QuoteAuthorComponent';
+import { QuoteSentenceComponent } from '@components/QuoteSentenceComponent';
 
 type QuoteProps = DicitState & DicitActions;
 

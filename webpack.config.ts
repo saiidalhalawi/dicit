@@ -12,8 +12,18 @@ const config: webpack.Configuration = {
     modules:  [
       path.resolve('./node_modules'),
       path.resolve('./src'),
+      path.resolve('./data'),
     ],
-    extensions: ['.js', '.ts', '.tsx', '.css', '.json'],
+    alias: {
+      "@data": path.resolve(__dirname, "data"),
+      "@actions": path.resolve(__dirname, "src/actions"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@containers": path.resolve(__dirname, "src/containers"),
+      "@reducers": path.resolve(__dirname, "src/reducers"),
+      "@states": path.resolve(__dirname, "src/states"),
+      "@store": path.resolve(__dirname, "src/store"),
+    },
+    extensions: ['.js', '.ts', '.tsx', '.json'],
   },
   module: {
     rules: [

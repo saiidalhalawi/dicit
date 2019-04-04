@@ -1,8 +1,8 @@
 import { reducerWithInitialState } from 'typescript-fsa-reducers';
 
-import { dicitActions } from '../actions';
-import { Quote } from '../states/QuoteState';
-import { QuoteStats } from '../states/QuoteStatsState';
+import { dicitActions } from '@actions/index';
+import { Quote } from '@states/QuoteState';
+import { QuoteStats } from '@states/QuoteStatsState';
 
 export interface DicitState {
   quote: Quote;
@@ -15,7 +15,7 @@ const fetchRandomQuote = (): DicitState => {
     remainedQuotes = JSON.parse(localStorage.getItem('remainedQuotes'));
   }
 
-  const wholeQuotes: { quotes: Quote[] } = require('./../../data/quotes.json');
+  const wholeQuotes: { quotes: Quote[] } = require('@data/quotes.json');
   if (remainedQuotes.length === 0) {
     remainedQuotes = wholeQuotes.quotes;
   }

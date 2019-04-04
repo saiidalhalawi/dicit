@@ -2,9 +2,9 @@ import { Action } from 'typescript-fsa';
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 
-import { AppState } from '../store';
-import { dicitActions } from '../actions';
-import { QuoteFrameComponent } from '../components/QuoteFrameComponent';
+import { AppState } from '@store/index';
+import { dicitActions } from '@actions/index';
+import { QuoteFrameComponent } from '@components/QuoteFrameComponent';
 
 export interface DicitActions {
   init: () => Action<any>;

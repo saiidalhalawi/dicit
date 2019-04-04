@@ -13,6 +13,16 @@
       "typings",
       "node_modules/@types"
     ],
+    "baseUrl": "./",
+    "paths": {
+      "@data/*": ["data/*"],
+      "@actions/*": ["src/actions/*"],
+      "@components/*": ["src/components/*"],
+      "@containers/*": ["src/containers/*"],
+      "@reducers/*": ["src/reducers/*"],
+      "@states/*": ["src/states/*"],
+      "@store/*": ["src/store/*"]
+    },
     "allowSyntheticDefaultImports": true
   },
   "include": [
