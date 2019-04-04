@@ -10,31 +10,29 @@ import { QuoteSentenceComponent } from './QuoteSentenceComponent';
 
 type QuoteProps = DicitState & DicitActions;
 
-const QuoteFrame = styled.div`
+const QuoteWrapper = styled.div`
   color: #7b7b84;
   height: 90%;
-  font-family: 'Times New Roman';
-  font-style: italic;
   margin: auto;
   padding: 3rem 2rem;
   width: 90%;
+`;
+
+const QuoteFrame = styled.div`
+  font-family: 'Times New Roman';
+  font-style: italic;
   &:hover {
+    opacity: .75;
     cursor: pointer;
   }
 `;
 
-export class QuoteFrameComponent extends React.Component<QuoteProps> {
-  public componentDidMount(): void {
-    const { rotateQuotes } = this.props;
-    rotateQuotes();
-  }
-  public render(): JSX.Element {
-    return (
-      <QuoteFrame onClick={this.props.handleClick}>
-        <QuoteSentenceComponent sentence={this.props.quote.sentence} />
-        <QuoteAuthorComponent name={this.props.quote.author} />
-        <QuoteStatsComponent whole={this.props.stats.whole} consumed={this.props.stats.consumed} />
-      </QuoteFrame>
-    );
-  }
-}
+export const QuoteFrameComponent: React.FC<QuoteProps>  = (props: QuoteProps) => (
+  <QuoteWrapper>
+    <QuoteFrame onClick={props.handleClick}>
+      <QuoteSentenceComponent sentence={props.quote.sentence} />
+      <QuoteAuthorComponent name={props.quote.author} />
+    </QuoteFrame>
+    <QuoteStatsComponent whole={props.stats.whole} consumed={props.stats.consumed} />
+  </QuoteWrapper>
+);

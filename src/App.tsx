@@ -9,14 +9,10 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-class App extends React.Component {
-  render() {
-    return (
-      <Wrapper>
-        <QuoteFrameContainer />
-      </Wrapper>
-    );
-  }
-}
+const App: React.FC<void>  = () => (
+  <Wrapper>
+    <QuoteFrameContainer />
+  </Wrapper>
+);
 
 export default App;

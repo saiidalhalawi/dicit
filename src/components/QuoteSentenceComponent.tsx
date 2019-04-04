@@ -18,7 +18,7 @@ const QuoteSentence = styled.p`
   transition-delay: .7s;
 `;
 
-export const QuoteSentenceComponent = (props: QuoteSentenceProps) => (
+export const QuoteSentenceComponent: React.FC<QuoteSentenceProps> = (props: QuoteSentenceProps) => (
   <QuoteSentenceWrapper>
     <QuoteSentence>{props.sentence}</QuoteSentence>
   </QuoteSentenceWrapper>
