@@ -10,23 +10,26 @@ export interface DicitState {
 }
 
 const fetchRandomQuote = (): DicitState => {
-  let remainedQuotes = [];
+  let remainedQuotes: Quote[] = [];
   if ('remainedQuotes' in localStorage) {
     remainedQuotes = JSON.parse(localStorage.getItem('remainedQuotes'));
   }
 
-  const wholeQuotes = require('./../../data/quotes.json');
+  const wholeQuotes: { quotes: Quote[] } = require('./../../data/quotes.json');
   if (remainedQuotes.length === 0) {
     remainedQuotes = wholeQuotes.quotes;
   }
-  const wholeQuotesCount = wholeQuotes.quotes.length
-  const remainedCount = wholeQuotesCount - remainedQuotes.length;
+  const wholeQuotesCount: number = wholeQuotes.quotes.length;
 
-  const index = Math.floor(Math.random() * remainedQuotes.length);
+  const index: number = Math.floor(Math.random() * remainedQuotes.length);
+
+  const picked: Quote = remainedQuotes[index];
   remainedQuotes.splice(index, 1);
+
+  const remainedCount: number = wholeQuotesCount - remainedQuotes.length;
   localStorage.setItem('remainedQuotes', JSON.stringify(remainedQuotes));
 
-  return { quote: remainedQuotes[index], stats: { consumed: remainedCount, whole: wholeQuotesCount } };
+  return { quote: picked, stats: { consumed: remainedCount, whole: wholeQuotesCount } };
 };
 
 const initialState: DicitState = fetchRandomQuote();

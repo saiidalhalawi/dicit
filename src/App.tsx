@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-const App: React.FC<void>  = () => (
+const App: React.FC  = () => (
   <Wrapper>
     <QuoteFrameContainer />
   </Wrapper>
