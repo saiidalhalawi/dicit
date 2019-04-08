@@ -23,32 +23,21 @@ const config: webpack.Configuration = {
       "@states": path.resolve(__dirname, "src/states"),
       "@store": path.resolve(__dirname, "src/store"),
     },
-    extensions: ['.js', '.ts', '.tsx', '.json'],
+    extensions: ['.ts', '.tsx', '.js', '.json'],
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: 'awesome-typescript-loader',
-      },
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [
-          'style-loader',
-          'css-loader?modules&importLoaders=1&localIdentName=[name]--[local]--[hash:base64:5]',
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              plugins: [
-                autoprefixer(),
-              ],
-            },
-          },
-        ],
-      },
+        use: {
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: true,
+            configFile: "tsconfig.json"
+          }
+        }
+      }
     ],
   },
   devtool: 'source-map',
