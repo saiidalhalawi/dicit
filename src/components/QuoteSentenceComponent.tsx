@@ -1,5 +1,5 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
 export type QuoteSentenceProps = {
   sentence: string;
@@ -13,12 +13,14 @@ const QuoteSentenceWrapper = styled.div`
 
 const QuoteSentence = styled.p`
   animation-name: fade-quote;
-  animation-duration: .75s;
+  animation-duration: 0.75s;
   animation-timing-function: ease-out;
-  transition-delay: .7s;
+  transition-delay: 0.7s;
 `;
 
-export const QuoteSentenceComponent: React.FC<QuoteSentenceProps> = (props: QuoteSentenceProps) => (
+export const QuoteSentenceComponent: React.FC<QuoteSentenceProps> = (
+  props: QuoteSentenceProps
+): React.ReactElement => (
   <QuoteSentenceWrapper>
     <QuoteSentence>{props.sentence}</QuoteSentence>
   </QuoteSentenceWrapper>

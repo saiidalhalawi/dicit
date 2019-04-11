@@ -1,27 +1,30 @@
-import { Action } from 'typescript-fsa';
-import { Dispatch } from 'redux';
-import { connect } from 'react-redux';
+import { Action } from "typescript-fsa";
+import { Dispatch } from "redux";
+import { connect } from "react-redux";
 
-import { AppState } from '@store/index';
-import { dicitActions } from '@actions/index';
-import { QuoteFrameComponent } from '@components/QuoteFrameComponent';
+import { AppState } from "@store/index";
+import { dicitActions } from "@actions/index";
+import { QuoteFrameComponent } from "@components/QuoteFrameComponent";
 
 export interface DicitActions {
-  init: () => Action<any>;
-  handleClick: () => Action<any>
+  init: () => Action<void>;
+  handleClick: () => Action<any>;
 }
 
-function mapDispatchToProps(dispatch: Dispatch) {
+const mapDispatchToProps = (dispatch: Dispatch): DicitActions => {
   return {
     init: () => dispatch(dicitActions.init()),
-    handleClick: () => {
+    handleClick: (): any => {
       dispatch(dicitActions.fetchNewQuote());
     }
   };
-}
+};
 
-function mapStateToProps(state: AppState) {
+const mapStateToProps = (state: AppState) => {
   return Object.assign({}, state);
-}
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(QuoteFrameComponent);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(QuoteFrameComponent);
