@@ -1,7 +1,7 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
-import { QuoteStats } from '@states/QuoteStatsState';
+import { QuoteStats } from "@states/QuoteStatsState";
 
 const QuoteStatsFrame = styled.div`
   position: fixed;
@@ -17,10 +17,12 @@ const QuoteStatsContents = styled.span`
   padding: 1rem 0;
 `;
 
-export const QuoteStatsComponent = (props: QuoteStats) => {
+export const QuoteStatsComponent = (props: QuoteStats): React.ReactElement => {
   return (
     <QuoteStatsFrame>
-      <QuoteStatsContents>{props.consumed} / {props.whole}</QuoteStatsContents>
+      <QuoteStatsContents>
+        {props.consumed} / {props.whole}
+      </QuoteStatsContents>
     </QuoteStatsFrame>
   );
-}
+};
