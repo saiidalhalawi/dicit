@@ -1,12 +1,12 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
-import { DicitState } from '@reducers/quotes';
-import { DicitActions } from '@containers/QuoteFrameContainer';
+import { DicitState } from "@reducers/quotes";
+import { DicitActions } from "@containers/QuoteFrameContainer";
 
-import { QuoteStatsComponent } from '@components/QuoteStatsComponent';
-import { QuoteAuthorComponent } from '@components/QuoteAuthorComponent';
-import { QuoteSentenceComponent } from '@components/QuoteSentenceComponent';
+import { QuoteStatsComponent } from "@components/QuoteStatsComponent";
+import { QuoteAuthorComponent } from "@components/QuoteAuthorComponent";
+import { QuoteSentenceComponent } from "@components/QuoteSentenceComponent";
 
 type QuoteProps = DicitState & DicitActions;
 
@@ -19,20 +19,25 @@ const QuoteWrapper = styled.div`
 `;
 
 const QuoteFrame = styled.div`
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: italic;
   &:hover {
-    opacity: .75;
+    opacity: 0.75;
     cursor: pointer;
   }
 `;
 
-export const QuoteFrameComponent: React.FC<QuoteProps>  = (props: QuoteProps) => (
+export const QuoteFrameComponent: React.FC<QuoteProps> = (
+  props: QuoteProps
+): React.ReactElement => (
   <QuoteWrapper>
     <QuoteFrame onClick={props.handleClick}>
       <QuoteSentenceComponent sentence={props.quote.sentence} />
       <QuoteAuthorComponent name={props.quote.author} />
     </QuoteFrame>
-    <QuoteStatsComponent whole={props.stats.whole} consumed={props.stats.consumed} />
+    <QuoteStatsComponent
+      whole={props.stats.whole}
+      consumed={props.stats.consumed}
+    />
   </QuoteWrapper>
 );

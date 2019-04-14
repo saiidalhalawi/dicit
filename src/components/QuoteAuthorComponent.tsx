@@ -1,5 +1,5 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
 export type QuoteAuthorProps = {
   name: string;
@@ -18,12 +18,14 @@ const QuoteAutherWrapper = styled.div`
 
 const QuoteAuther = styled.p`
   :before {
-    content: '- '
+    content: "- ";
   }
 `;
 
-export const QuoteAuthorComponent = (props: QuoteAuthorProps) => (
-  <QuoteAutherWrapper >
+export const QuoteAuthorComponent = (
+  props: QuoteAuthorProps
+): React.ReactElement => (
+  <QuoteAutherWrapper>
     <QuoteAuther>{props.name}</QuoteAuther>
   </QuoteAutherWrapper>
 );

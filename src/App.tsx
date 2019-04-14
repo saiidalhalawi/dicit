@@ -1,7 +1,7 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
-import QuoteFrameContainer from '@containers/quoteFrameContainer';
+import QuoteFrameContainer from "@containers/quoteFrameContainer";
 
 const Wrapper = styled.div`
   position: relative;
@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-const App: React.FC  = () => (
+const App: React.FC = () => (
   <Wrapper>
     <QuoteFrameContainer />
   </Wrapper>
