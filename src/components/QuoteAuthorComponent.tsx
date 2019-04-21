@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useEffect } from "react";
+import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
 
 export type QuoteAuthorProps = {
@@ -6,14 +8,10 @@ export type QuoteAuthorProps = {
 };
 
 const QuoteAutherWrapper = styled.div`
-  animation-name: animating-author;
-  animation-duration: 1.25s;
-  animation-timing-function: ease-out;
   font-size: 2.85rem;
   margin: 0;
   text-align: right;
   padding-top: 20px;
-  transition-delay: 1.5s;
 `;
 
 const QuoteAuther = styled.p`
@@ -22,10 +20,23 @@ const QuoteAuther = styled.p`
   }
 `;
 
+const AnimatedQuoteAuther = animated(QuoteAuther);
+
 export const QuoteAuthorComponent = (
   props: QuoteAuthorProps
-): React.ReactElement => (
-  <QuoteAutherWrapper>
-    <QuoteAuther>{props.name}</QuoteAuther>
-  </QuoteAutherWrapper>
-);
+): React.ReactElement => {
+  const [styleProps, set] = useSpring(() => ({
+    from: { opacity: 0, x: 100 },
+    to: { opacity: 1, x: 0 },
+    delay: 500,
+    config: { duration: 2000 }
+  }));
+  useEffect(() => {
+    return () => set({ reset: true });
+  }, [props.name]);
+  return (
+    <QuoteAutherWrapper>
+      <AnimatedQuoteAuther style={styleProps}>{props.name}</AnimatedQuoteAuther>
+    </QuoteAutherWrapper>
+  );
+};

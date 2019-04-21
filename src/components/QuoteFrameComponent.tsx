@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { DicitState } from "@reducers/quotes";
+import { DicitState } from "@libs/fetchQuotes";
 import { DicitActions } from "@containers/QuoteFrameContainer";
 
 import { QuoteStatsComponent } from "@components/QuoteStatsComponent";
