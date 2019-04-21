@@ -1,7 +1,7 @@
 import { reducerWithInitialState } from "typescript-fsa-reducers";
 import { dicitActions } from "@actions/index";
 
-import { DicitState, fetchRandomQuote } from "@libs/fetch_quotes";
+import { DicitState, fetchRandomQuote } from "@libs/fetchQuotes";
 
 const initialState: DicitState = fetchRandomQuote();
 
