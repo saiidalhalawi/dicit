@@ -33,7 +33,7 @@ export const fetchRandomQuote = (): DicitState => {
   localStorage.setItem("remainedQuotes", JSON.stringify(remainedQuotes));
 
   return {
-    quote: remainedQuotes[index] as Quote,
-    stats: { consumed: consumedCount, whole: wholeQuotesCount } as QuoteStats
+    quote: remainedQuotes[index],
+    stats: { consumed: consumedCount, whole: wholeQuotesCount }
   };
 };
