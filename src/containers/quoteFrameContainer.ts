@@ -4,16 +4,17 @@ import { connect } from "react-redux";
 
 import { AppState } from "@store/index";
 import { dicitActions } from "@actions/index";
+import { DicitState } from "@libs/fetchQuotes";
 import { QuoteFrameComponent } from "@components/QuoteFrameComponent";
 
 export interface DicitActions {
   init: () => Action<void>;
-  handleClick: () => Action<any>;
+  handleClick: () => Action<DicitState>;
 }
 
 const mapDispatchToProps = (dispatch: Dispatch): DicitActions => {
   return {
-    init: () => dispatch(dicitActions.init()),
+    init: (): Action<void> => dispatch(dicitActions.init()),
     handleClick: (): any => {
       dispatch(dicitActions.fetchNewQuote());
     }
