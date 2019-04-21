@@ -1,39 +1,7 @@
 import { reducerWithInitialState } from "typescript-fsa-reducers";
-
 import { dicitActions } from "@actions/index";
-import { Quote } from "@states/QuoteState";
-import { QuoteStats } from "@states/QuoteStatsState";
 
-export interface DicitState {
-  quote: Quote;
-  stats: QuoteStats;
-}
-
-const fetchRandomQuote = (): DicitState => {
-  let remainedQuotes: Quote[] = [];
-  if ("remainedQuotes" in localStorage) {
-    remainedQuotes = JSON.parse(localStorage.getItem("remainedQuotes"));
-  }
-
-  const wholeQuotes: { quotes: Quote[] } = require("@data/quotes.json"); // eslint-disable-line @typescript-eslint/no-var-requires
-  if (remainedQuotes.length === 0) {
-    remainedQuotes = wholeQuotes.quotes;
-  }
-  const wholeQuotesCount: number = wholeQuotes.quotes.length;
-
-  const index: number = Math.floor(Math.random() * remainedQuotes.length);
-
-  const picked: Quote = remainedQuotes[index];
-  remainedQuotes.splice(index, 1);
-
-  const remainedCount: number = wholeQuotesCount - remainedQuotes.length;
-  localStorage.setItem("remainedQuotes", JSON.stringify(remainedQuotes));
-
-  return {
-    quote: picked,
-    stats: { consumed: remainedCount, whole: wholeQuotesCount }
-  };
-};
+import { DicitState, fetchRandomQuote } from "@libs/fetch_quotes";
 
 const initialState: DicitState = fetchRandomQuote();
 

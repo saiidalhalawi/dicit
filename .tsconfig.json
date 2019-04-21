@@ -19,7 +19,8 @@
       "@components/*": ["src/components/*"],
       "@reducers/*": ["src/reducers/*"],
       "@states/*": ["src/states/*"],
-      "@store/*": ["src/store/*"]
+      "@store/*": ["src/store/*"],
+      "@libs/*": ["src/libs/*"]
     }
   },
   "typeRoots": ["node_modules/@types"],
