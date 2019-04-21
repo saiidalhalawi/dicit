@@ -1,14 +1,18 @@
-import * as React from 'react';
-import QuoteFrameContainer from './containers/quoteFrameContainer';
+import * as React from "react";
+import styled from "styled-components";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <QuoteFrameContainer />
-      </div>
-    );
-  }
-}
+import QuoteFrameContainer from "@containers/quoteFrameContainer";
+
+const Wrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+`;
+
+const App: React.FC = () => (
+  <Wrapper>
+    <QuoteFrameContainer />
+  </Wrapper>
+);
 
 export default App;

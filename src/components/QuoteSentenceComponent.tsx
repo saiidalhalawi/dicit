@@ -1,36 +1,39 @@
-import * as React from 'react';
+import * as React from "react";
+import { useEffect } from "react";
+import { useSpring, animated } from "react-spring";
+import styled from "styled-components";
 
 export type QuoteSentenceProps = {
   sentence: string;
 };
 
-const styles = `
-.quote-line {
+const QuoteSentenceWrapper = styled.div`
   font-size: 4.5rem;
   margin: 0;
   text-align: left;
-}
-
-.quote-line p {
-  animation-name: fade-quote;
-  animation-duration: .75s;
-  animation-timing-function: ease-out;
-  transition-delay: .7s;
-}
-
-@keyframes fade-quote {
-  0%     { opacity: 0; }
-  50%    { opacity: 0; }
-  75%    { opacity: .25; }
-  100%   { opacity: 1; }
-}
 `;
 
-export const QuoteSentenceComponent = (props: QuoteSentenceProps) => (
-  <div className="quote-line">
-    <style>
-      {styles}
-    </style>
-    <p>{props.sentence}</p>
-  </div>
-);
+const QuoteSentence = styled.p``;
+
+const AnimatedQuoteSentence = animated(QuoteSentence);
+
+export const QuoteSentenceComponent: React.FC<QuoteSentenceProps> = (
+  props: QuoteSentenceProps
+): React.ReactElement => {
+  const [styleProps, set] = useSpring(() => ({
+    from: { opacity: 0, x: 100 },
+    to: { opacity: 1, x: 0 },
+    delay: 500,
+    config: { duration: 1000 }
+  }));
+  useEffect(() => {
+    return () => set({ reset: true });
+  });
+  return (
+    <QuoteSentenceWrapper>
+      <AnimatedQuoteSentence style={styleProps}>
+        {props.sentence}
+      </AnimatedQuoteSentence>
+    </QuoteSentenceWrapper>
+  );
+};
