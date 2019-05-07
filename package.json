@@ -7,6 +7,7 @@
     "test": "jest",
     "development": "webpack-dev-server  --mode=development --verbose --hot --inline",
     "production": "webpack --mode=production",
+    "pack": "zip ./built_packages/dicit.zip index.html manifest.json index.css dist/bundle.js",
     "lint": "npx eslint src/**/* __test__/**/* --ext \".ts, .tsx\""
   },
   "repository": {
