@@ -1,7 +1,7 @@
-import * as React from "react";
-import { useEffect } from "react";
-import { useSpring, animated } from "react-spring";
-import styled from "styled-components";
+import * as React from 'react';
+import { useEffect } from 'react';
+import { useSpring, animated } from 'react-spring';
+import styled from 'styled-components';
 
 export type QuoteAuthorProps = {
   name: string;
@@ -16,7 +16,7 @@ const QuoteAutherWrapper = styled.div`
 
 const QuoteAuther = styled.p`
   :before {
-    content: "- ";
+    content: '- ';
   }
 `;
 
@@ -29,7 +29,7 @@ export const QuoteAuthorComponent = (
     from: { opacity: 0, x: 100 },
     to: { opacity: 1, x: 0 },
     delay: 500,
-    config: { duration: 2000 }
+    config: { duration: 2000 },
   }));
   useEffect(() => {
     return () => set({ reset: true });

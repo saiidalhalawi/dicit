@@ -1,11 +1,11 @@
-import { Action } from "typescript-fsa";
-import { Dispatch } from "redux";
-import { connect } from "react-redux";
+import { Action } from 'typescript-fsa';
+import { Dispatch } from 'redux';
+import { connect } from 'react-redux';
 
-import { AppState } from "@store/index";
-import { dicitActions } from "@actions/index";
-import { DicitState } from "@libs/fetchQuotes";
-import { QuoteFrameComponent } from "@components/QuoteFrameComponent";
+import { AppState } from '@store/index';
+import { dicitActions } from '@actions/index';
+import { DicitState } from '@libs/fetchQuotes';
+import { QuoteFrameComponent } from '@components/QuoteFrameComponent';
 
 export interface DicitActions {
   init: () => Action<void>;
@@ -17,7 +17,7 @@ const mapDispatchToProps = (dispatch: Dispatch): DicitActions => {
     init: (): Action<void> => dispatch(dicitActions.init()),
     handleClick: (): any => {
       dispatch(dicitActions.fetchNewQuote());
-    }
+    },
   };
 };
 

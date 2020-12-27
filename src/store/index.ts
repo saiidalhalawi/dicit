@@ -1,7 +1,7 @@
-import { createStore } from "redux";
-import { composeWithDevTools } from "redux-devtools-extension";
+import { createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-import { quotesReducer, DicitState } from "@reducers/quotes";
+import { quotesReducer, DicitState } from '@reducers/quotes';
 
 export type AppState = DicitState;
 

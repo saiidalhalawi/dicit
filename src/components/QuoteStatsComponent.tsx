@@ -1,7 +1,7 @@
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
+import styled from 'styled-components';
 
-import { QuoteStats } from "@states/QuoteStatsState";
+import { QuoteStats } from '@states/QuoteStatsState';
 
 const QuoteStatsFrame = styled.div`
   position: fixed;

@@ -1,5 +1,5 @@
-import { Quote } from "@states/QuoteState";
-import { QuoteStats } from "@states/QuoteStatsState";
+import { Quote } from '@states/QuoteState';
+import { QuoteStats } from '@states/QuoteStatsState';
 
 export type DicitState = {
   quote: Quote;
@@ -7,12 +7,12 @@ export type DicitState = {
 };
 
 const fetchWholeQuotes = (): { quotes: Quote[] } =>
-  require("@data/quotes.json");
+  require('@data/quotes.json');
 
 export const fetchRandomQuote = (): DicitState => {
   let remainedQuotes: Quote[] = [];
-  if ("remainedQuotes" in localStorage) {
-    remainedQuotes = JSON.parse(localStorage.getItem("remainedQuotes"));
+  if ('remainedQuotes' in localStorage) {
+    remainedQuotes = JSON.parse(localStorage.getItem('remainedQuotes'));
   }
 
   const wholeQuotes = fetchWholeQuotes().quotes;
@@ -21,8 +21,8 @@ export const fetchRandomQuote = (): DicitState => {
   }
 
   let wholeQuotesCount: number = wholeQuotes.length;
-  if ("wholeQuotesCount" in localStorage) {
-    remainedQuotes = JSON.parse(localStorage.getItem("remainedQuotes"));
+  if ('wholeQuotesCount' in localStorage) {
+    remainedQuotes = JSON.parse(localStorage.getItem('remainedQuotes'));
   }
 
   const index: number = Math.floor(Math.random() * remainedQuotes.length);
@@ -30,10 +30,10 @@ export const fetchRandomQuote = (): DicitState => {
   remainedQuotes.splice(index, 1);
 
   const consumedCount: number = wholeQuotesCount - remainedQuotes.length;
-  localStorage.setItem("remainedQuotes", JSON.stringify(remainedQuotes));
+  localStorage.setItem('remainedQuotes', JSON.stringify(remainedQuotes));
 
   return {
     quote: remainedQuotes[index],
-    stats: { consumed: consumedCount, whole: wholeQuotesCount }
+    stats: { consumed: consumedCount, whole: wholeQuotesCount },
   };
 };

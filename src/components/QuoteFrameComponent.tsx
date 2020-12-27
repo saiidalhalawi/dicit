@@ -1,12 +1,12 @@
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
+import styled from 'styled-components';
 
-import { DicitState } from "@libs/fetchQuotes";
-import { DicitActions } from "@containers/QuoteFrameContainer";
+import { DicitState } from '@libs/fetchQuotes';
+import { DicitActions } from '@containers/QuoteFrameContainer';
 
-import { QuoteStatsComponent } from "@components/QuoteStatsComponent";
-import { QuoteAuthorComponent } from "@components/QuoteAuthorComponent";
-import { QuoteSentenceComponent } from "@components/QuoteSentenceComponent";
+import { QuoteStatsComponent } from '@components/QuoteStatsComponent';
+import { QuoteAuthorComponent } from '@components/QuoteAuthorComponent';
+import { QuoteSentenceComponent } from '@components/QuoteSentenceComponent';
 
 type QuoteProps = DicitState & DicitActions;
 
@@ -19,7 +19,7 @@ const QuoteWrapper = styled.div`
 `;
 
 const QuoteFrame = styled.div`
-  font-family: "Times New Roman";
+  font-family: 'Times New Roman';
   font-style: italic;
   &:hover {
     opacity: 0.75;
