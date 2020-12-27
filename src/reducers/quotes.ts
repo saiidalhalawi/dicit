@@ -3,7 +3,7 @@ import { dicitActions } from '@actions/index';
 
 import { DicitState, fetchRandomQuote } from '@libs/fetchQuotes';
 
-const initialState: DicitState = fetchRandomQuote();
+export const initialState: DicitState = fetchRandomQuote();
 
 export const quotesReducer = reducerWithInitialState(initialState)
   .case(dicitActions.init, state => {
