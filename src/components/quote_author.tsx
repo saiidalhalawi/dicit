@@ -7,21 +7,6 @@ export type QuoteAuthorProps = {
   name: string;
 };
 
-const QuoteAutherWrapper = styled.div`
-  font-size: 2.85rem;
-  margin: 0;
-  text-align: right;
-  padding-top: 20px;
-`;
-
-const QuoteAuther = styled.p`
-  :before {
-    content: '- ';
-  }
-`;
-
-const AnimatedQuoteAuther = animated(QuoteAuther);
-
 export const QuoteAuthorComponent = (
   props: QuoteAuthorProps
 ): React.ReactElement => {
@@ -40,3 +25,17 @@ export const QuoteAuthorComponent = (
     </QuoteAutherWrapper>
   );
 };
+
+const QuoteAutherWrapper = styled.div`
+  font-size: 2.85rem;
+  margin: 0;
+  text-align: right;
+  padding-top: 20px;
+`;
+
+const QuoteAuther = styled.p`
+  :before {
+    content: '- ';
+  }
+`;
+const AnimatedQuoteAuther = animated(QuoteAuther);

@@ -7,16 +7,6 @@ export type QuoteSentenceProps = {
   sentence: string;
 };
 
-const QuoteSentenceWrapper = styled.div`
-  font-size: 4.5rem;
-  margin: 0;
-  text-align: left;
-`;
-
-const QuoteSentence = styled.p``;
-
-const AnimatedQuoteSentence = animated(QuoteSentence);
-
 export const QuoteSentenceComponent: React.FC<QuoteSentenceProps> = (
   props: QuoteSentenceProps
 ): React.ReactElement => {
@@ -37,3 +27,12 @@ export const QuoteSentenceComponent: React.FC<QuoteSentenceProps> = (
     </QuoteSentenceWrapper>
   );
 };
+
+const QuoteSentenceWrapper = styled.div`
+  font-size: 4.5rem;
+  margin: 0;
+  text-align: left;
+`;
+
+const QuoteSentence = styled.p``;
+const AnimatedQuoteSentence = animated(QuoteSentence);

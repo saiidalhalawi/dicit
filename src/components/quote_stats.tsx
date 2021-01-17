@@ -3,6 +3,16 @@ import styled from 'styled-components';
 
 import { QuoteStats } from '@states/quote_stats_state';
 
+export const QuoteStatsComponent = (props: QuoteStats): React.ReactElement => {
+  return (
+    <QuoteStatsFrame>
+      <QuoteStatsContents>
+        {props.consumed} / {props.whole}
+      </QuoteStatsContents>
+    </QuoteStatsFrame>
+  );
+};
+
 const QuoteStatsFrame = styled.div`
   position: fixed;
   bottom: 0;
@@ -16,13 +26,3 @@ const QuoteStatsContents = styled.span`
   display: inline-block;
   padding: 1rem 0;
 `;
-
-export const QuoteStatsComponent = (props: QuoteStats): React.ReactElement => {
-  return (
-    <QuoteStatsFrame>
-      <QuoteStatsContents>
-        {props.consumed} / {props.whole}
-      </QuoteStatsContents>
-    </QuoteStatsFrame>
-  );
-};

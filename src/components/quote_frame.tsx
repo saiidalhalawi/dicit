@@ -4,34 +4,20 @@ import { atom, useRecoilState } from 'recoil';
 import styled from 'styled-components';
 
 import { DicitState } from '@states/dicit_state';
-import { Quote } from '@states/quote_state';
-import { QuoteStats } from '@states/quote_stats_state';
-import { QuoteStatsComponent } from '@components/QuoteStatsComponent';
-import { QuoteAuthorComponent } from '@components/QuoteAuthorComponent';
-import { QuoteSentenceComponent } from '@components/QuoteSentenceComponent';
+
+import { QuoteStatsComponent } from '@components/quote_stats';
+import { QuoteAuthorComponent } from '@components/quote_author';
+import { QuoteSentenceComponent } from '@components/quote_sentense';
 
 import fetchRandomQuote from '@libs/fetchQuotes';
 
-const defaultQuote: Quote = {
-  sentence: '',
-  author: '',
-};
-
-const defaultStats: QuoteStats = {
-  consumed: 0,
-  whole: 0,
-};
-
 const dicitState = atom<DicitState>({
   key: 'currentQuoteState',
-  default: {
-    quote: defaultQuote,
-    stats: defaultStats,
-  },
+  default: fetchRandomQuote(),
 });
 
 const QuoteFrame: React.FunctionComponent = (): React.ReactElement => {
-  const [current, setDicit] = useRecoilState(dicitState);
+  const [current, setDicit] = useRecoilState<DicitState>(dicitState);
 
   const handleClick = useCallback(() => {
     setDicit(fetchRandomQuote());
