@@ -1,12 +1,6 @@
 import * as React from 'react';
-import { useCallback, useEffect } from 'react';
-import {
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-  useSetRecoilState,
-} from 'recoil';
+import { useCallback } from 'react';
+import { atom, useRecoilState } from 'recoil';
 import styled from 'styled-components';
 
 import { DicitState } from '@states/dicit_state';
@@ -36,18 +30,8 @@ const dicitState = atom<DicitState>({
   },
 });
 
-const currentState = selector<DicitState>({
-  key: 'currentState',
-  get: ({ get }) => get(dicitState),
-  set: ({ set }) => set(dicitState, fetchRandomQuote()),
-});
-
 const QuoteFrame: React.FunctionComponent = (): React.ReactElement => {
-  const [current, setDicit] = useRecoilState(currentState);
-
-  useEffect(() => {
-    return () => console.log('unmounting...');
-  });
+  const [current, setDicit] = useRecoilState(dicitState);
 
   const handleClick = useCallback(() => {
     setDicit(fetchRandomQuote());
