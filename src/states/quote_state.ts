@@ -1,4 +1,4 @@
-export interface Quote {
+export type Quote = {
   sentence: string;
   author: string;
-}
+};

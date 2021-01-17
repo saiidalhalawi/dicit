@@ -1,15 +1,10 @@
-import { Quote } from '@states/QuoteState';
-import { QuoteStats } from '@states/QuoteStatsState';
-
-export type DicitState = {
-  quote: Quote;
-  stats: QuoteStats;
-};
+import { Quote } from '@states/quote_state';
+import { DicitState } from '@states/dicit_state';
 
 const fetchWholeQuotes = (): { quotes: Quote[] } =>
   require('@data/quotes.json');
 
-export const fetchRandomQuote = (): DicitState => {
+export default (): DicitState => {
   let remainedQuotes: Quote[] = [];
   if ('remainedQuotes' in localStorage) {
     remainedQuotes = JSON.parse(localStorage.getItem('remainedQuotes'));
@@ -26,7 +21,6 @@ export const fetchRandomQuote = (): DicitState => {
   }
 
   const index: number = Math.floor(Math.random() * remainedQuotes.length);
-
   remainedQuotes.splice(index, 1);
 
   const consumedCount: number = wholeQuotesCount - remainedQuotes.length;
