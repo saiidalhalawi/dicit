@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 
-import { QuoteSentenceComponent } from '@components/QuoteSentenceComponent';
+import { QuoteSentenceComponent } from '@components/quote_sentense';
 
 describe('Component: QuoteSentence', (): void => {
   it('will be rendered with no error', (): void => {

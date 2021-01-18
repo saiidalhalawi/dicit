@@ -15,11 +15,8 @@
     "types": ["node", "jest"],
     "paths": {
       "@data/*": ["data/*"],
-      "@actions/*": ["src/actions/*"],
       "@components/*": ["src/components/*"],
-      "@reducers/*": ["src/reducers/*"],
       "@states/*": ["src/states/*"],
-      "@store/*": ["src/store/*"],
       "@libs/*": ["src/libs/*"]
     }
   },

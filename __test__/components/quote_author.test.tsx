@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as renderer from 'react-test-renderer';
 
-import { QuoteAuthorComponent } from '@components/QuoteAuthorComponent';
+import { QuoteAuthorComponent } from '@components/quote_author';
 
 describe('Component: QuoteAuthor', (): void => {
   it('will be rendered with no error', (): void => {

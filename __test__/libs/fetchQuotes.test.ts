@@ -1,4 +1,5 @@
-import { DicitState, fetchRandomQuote } from '@libs/fetchQuotes';
+import { DicitState } from '@states/dicit_state';
+import fetchRandomQuote from '@libs/fetchQuotes';
 
 describe('@libs: fetchRandomQuote', (): void => {
   it('will return certain contents', (): void => {

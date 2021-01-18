@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { RecoilRoot } from 'recoil';
 import styled from 'styled-components';
 
-import QuoteFrameContainer from '@containers/quoteFrameContainer';
+import QuoteFrame from '@components/quote_frame';
 
 const Wrapper = styled.div`
   position: relative;
@@ -9,11 +10,13 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-const App: React.FC = () => {
+const App: React.FunctionComponent = (): React.ReactElement => {
   return (
-    <Wrapper>
-      <QuoteFrameContainer />
-    </Wrapper>
+    <RecoilRoot>
+      <Wrapper>
+        <QuoteFrame />
+      </Wrapper>
+    </RecoilRoot>
   );
 };
 
