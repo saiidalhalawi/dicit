@@ -62,7 +62,7 @@
     "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-react": "^7.22.0",
     "jest": "^24.9.0",
-    "jest-config": "^24.9.0",
+    "jest-config": "^27.0.6",
     "jest-enzyme": "^7.1.2",
     "path": "^0.12.7",
     "postcss-loader": "^4.1.0",
